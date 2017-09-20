@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DisplayPhotoCollectionViewCell.h
 //  InstaKilo
 //
 //  Created by Paul on 2017-09-20.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DisplayPhotoCollectionViewCell.h"
 
-@interface ViewController : UIViewController
-
+@interface DisplayPhotoCollectionViewCell : UICollectionViewCell
 
 @end
-

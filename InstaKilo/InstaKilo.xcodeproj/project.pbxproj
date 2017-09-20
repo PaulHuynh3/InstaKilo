@@ -13,6 +13,9 @@
 		DA591E151F72DE4D003CCE79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA591E131F72DE4D003CCE79 /* Main.storyboard */; };
 		DA591E171F72DE4D003CCE79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA591E161F72DE4D003CCE79 /* Assets.xcassets */; };
 		DA591E1A1F72DE4D003CCE79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA591E181F72DE4D003CCE79 /* LaunchScreen.storyboard */; };
+		DA591E3A1F72E562003CCE79 /* PhotoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E391F72E562003CCE79 /* PhotoObject.m */; };
+		DA591E3D1F72E794003CCE79 /* CategoryPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E3C1F72E794003CCE79 /* CategoryPicture.m */; };
+		DA591E401F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E3F1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		DA591E161F72DE4D003CCE79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA591E191F72DE4D003CCE79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA591E1B1F72DE4D003CCE79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA591E381F72E562003CCE79 /* PhotoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoObject.h; sourceTree = "<group>"; };
+		DA591E391F72E562003CCE79 /* PhotoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoObject.m; sourceTree = "<group>"; };
+		DA591E3B1F72E794003CCE79 /* CategoryPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryPicture.h; sourceTree = "<group>"; };
+		DA591E3C1F72E794003CCE79 /* CategoryPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryPicture.m; sourceTree = "<group>"; };
+		DA591E3E1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		DA591E3F1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,10 @@
 		DA591E221F72DEB4003CCE79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA591E3B1F72E794003CCE79 /* CategoryPicture.h */,
+				DA591E3C1F72E794003CCE79 /* CategoryPicture.m */,
+				DA591E381F72E562003CCE79 /* PhotoObject.h */,
+				DA591E391F72E562003CCE79 /* PhotoObject.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -99,6 +112,8 @@
 			children = (
 				DA591E101F72DE4D003CCE79 /* ViewController.h */,
 				DA591E111F72DE4D003CCE79 /* ViewController.m */,
+				DA591E3E1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.h */,
+				DA591E3F1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -174,7 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA591E401F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m in Sources */,
 				DA591E121F72DE4D003CCE79 /* ViewController.m in Sources */,
+				DA591E3A1F72E562003CCE79 /* PhotoObject.m in Sources */,
+				DA591E3D1F72E794003CCE79 /* CategoryPicture.m in Sources */,
 				DA591E0F1F72DE4D003CCE79 /* AppDelegate.m in Sources */,
 				DA591E0C1F72DE4D003CCE79 /* main.m in Sources */,
 			);

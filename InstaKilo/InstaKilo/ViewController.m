@@ -8,22 +8,31 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end
+
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
 }
 
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView;
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section;
+
+
+
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+
+
 
 
 @end
