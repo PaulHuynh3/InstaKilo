@@ -16,6 +16,7 @@
 		DA591E3A1F72E562003CCE79 /* PhotoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E391F72E562003CCE79 /* PhotoObject.m */; };
 		DA591E3D1F72E794003CCE79 /* CategoryPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E3C1F72E794003CCE79 /* CategoryPicture.m */; };
 		DA591E401F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E3F1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m */; };
+		DA591E431F72ED04003CCE79 /* PictureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E421F72ED04003CCE79 /* PictureHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		DA591E3C1F72E794003CCE79 /* CategoryPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryPicture.m; sourceTree = "<group>"; };
 		DA591E3E1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayPhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		DA591E3F1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		DA591E411F72ED04003CCE79 /* PictureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureHandler.h; sourceTree = "<group>"; };
+		DA591E421F72ED04003CCE79 /* PictureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 		DA591E221F72DEB4003CCE79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA591E411F72ED04003CCE79 /* PictureHandler.h */,
+				DA591E421F72ED04003CCE79 /* PictureHandler.m */,
 				DA591E3B1F72E794003CCE79 /* CategoryPicture.h */,
 				DA591E3C1F72E794003CCE79 /* CategoryPicture.m */,
 				DA591E381F72E562003CCE79 /* PhotoObject.h */,
@@ -195,6 +200,7 @@
 				DA591E3D1F72E794003CCE79 /* CategoryPicture.m in Sources */,
 				DA591E0F1F72DE4D003CCE79 /* AppDelegate.m in Sources */,
 				DA591E0C1F72DE4D003CCE79 /* main.m in Sources */,
+				DA591E431F72ED04003CCE79 /* PictureHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

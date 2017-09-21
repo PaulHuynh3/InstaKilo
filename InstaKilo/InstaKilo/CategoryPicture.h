@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PhotoObject.h"
 
 @interface CategoryPicture : NSObject
 
 @property (nonatomic,strong) NSString* categoryName;
 
--(instancetype)initWithCategoryName:(NSString*)name;
+@property (nonatomic,strong) NSArray <PhotoObject*> *photoArray;
 
+-(instancetype)initWithCategoryName:(NSString*)name;
 
 
 @end

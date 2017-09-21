@@ -7,7 +7,29 @@
 //
 
 #import "DisplayPhotoCollectionViewCell.h"
+#import "PhotoObject.h"
+
+@interface DisplayPhotoCollectionViewCell ()
+@property (weak, nonatomic) IBOutlet UIImageView *displayImage;
+
+@end
 
 @implementation DisplayPhotoCollectionViewCell
+
+
+
+ //overriding the setter so that the label will take in the photoobject's image'
+//setting the displayImage to display the photo item 
+- (void)setPhotoItem:(PhotoObject *)photoItem{
+    self.displayImage.image = photoItem.image;
+    _photoItem = photoItem;
+
+
+}
+
+
+
+
+
 
 @end

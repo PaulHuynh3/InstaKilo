@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "DisplayPhotoCollectionViewCell.h"
+#import "PictureHandler.h"
+#import "CategoryPicture.h"
 
 @interface ViewController : UIViewController
 

@@ -31,15 +31,33 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentifier" id="eMk-dP-OPC">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentifier" id="eMk-dP-OPC" customClass="DisplayPhotoCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="165" height="147"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="165" height="147"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batman01" translatesAutoresizingMaskIntoConstraints="NO" id="kY7-hc-Ksp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="165" height="147"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="kY7-hc-Ksp" firstAttribute="top" secondItem="eMk-dP-OPC" secondAttribute="top" id="1O4-LV-ziX"/>
+                                            <constraint firstItem="kY7-hc-Ksp" firstAttribute="leading" secondItem="eMk-dP-OPC" secondAttribute="leading" id="G5O-Ps-f9p"/>
+                                            <constraint firstAttribute="trailing" secondItem="kY7-hc-Ksp" secondAttribute="trailing" id="PRe-aq-VEA"/>
+                                            <constraint firstAttribute="bottom" secondItem="kY7-hc-Ksp" secondAttribute="bottom" id="SWL-MW-u99"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="displayImage" destination="kY7-hc-Ksp" id="Qwz-vH-3Fk"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="UEu-Xm-CbD"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bBc-Nh-wYi"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,10 +68,16 @@
                             <constraint firstItem="9zS-f8-Dac" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mqi-Lk-GYA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="9zS-f8-Dac" id="H7Y-tP-Iqx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="batman01" width="300" height="168"/>
+    </resources>
 </document>
