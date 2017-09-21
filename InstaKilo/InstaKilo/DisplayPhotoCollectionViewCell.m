@@ -19,11 +19,10 @@
 
 
  //overriding the setter so that the label will take in the photoobject's image'
-//setting the displayImage to display the photo item 
+//setting the displayImage to display the photo item  dont use self use "_"
 - (void)setPhotoItem:(PhotoObject *)photoItem{
     self.displayImage.image = photoItem.image;
     _photoItem = photoItem;
-
 
 }
 
