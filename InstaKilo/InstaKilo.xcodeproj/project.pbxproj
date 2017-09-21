@@ -17,6 +17,7 @@
 		DA591E3D1F72E794003CCE79 /* CategoryPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E3C1F72E794003CCE79 /* CategoryPicture.m */; };
 		DA591E401F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E3F1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m */; };
 		DA591E431F72ED04003CCE79 /* PictureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA591E421F72ED04003CCE79 /* PictureHandler.m */; };
+		DAA271DE1F7414AD005014CA /* SectionLabelCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA271DD1F7414AD005014CA /* SectionLabelCollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		DA591E3F1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		DA591E411F72ED04003CCE79 /* PictureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureHandler.h; sourceTree = "<group>"; };
 		DA591E421F72ED04003CCE79 /* PictureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureHandler.m; sourceTree = "<group>"; };
+		DAA271DC1F7414AD005014CA /* SectionLabelCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionLabelCollectionReusableView.h; sourceTree = "<group>"; };
+		DAA271DD1F7414AD005014CA /* SectionLabelCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionLabelCollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				DA591E111F72DE4D003CCE79 /* ViewController.m */,
 				DA591E3E1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.h */,
 				DA591E3F1F72E91C003CCE79 /* DisplayPhotoCollectionViewCell.m */,
+				DAA271DC1F7414AD005014CA /* SectionLabelCollectionReusableView.h */,
+				DAA271DD1F7414AD005014CA /* SectionLabelCollectionReusableView.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				DA591E3D1F72E794003CCE79 /* CategoryPicture.m in Sources */,
 				DA591E0F1F72DE4D003CCE79 /* AppDelegate.m in Sources */,
 				DA591E0C1F72DE4D003CCE79 /* main.m in Sources */,
+				DAA271DE1F7414AD005014CA /* SectionLabelCollectionReusableView.m in Sources */,
 				DA591E431F72ED04003CCE79 /* PictureHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +365,7 @@
 				DA591E201F72DE4D003CCE79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

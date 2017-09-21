@@ -10,6 +10,7 @@
 #import "DisplayPhotoCollectionViewCell.h"
 #import "PictureHandler.h"
 #import "CategoryPicture.h"
+#import "SectionLabelCollectionReusableView.h"
 
 @interface ViewController : UIViewController
 

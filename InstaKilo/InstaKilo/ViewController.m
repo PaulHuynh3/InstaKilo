@@ -25,18 +25,22 @@
 
 }
 
+ // returns the number of section
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    
-    // returns the number of section
     return self.pictureHandler.categoryArray.count;
 }
 
+
+//ask how many section and how many items in each section.
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    //return the section and the number of items inside.
-    //the array of photoobject is inside picturehandler
+    
+    
+    //the array of photoobject is inside picturehandler 2d array.
     return self.pictureHandler.categoryArray[section].photoArray.count;
     
 }
+
+
 
 
 //indexpath gives you section and row(item) information we can input into the formula.
@@ -45,29 +49,58 @@
     
     DisplayPhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellIdentifier" forIndexPath:indexPath];
     
-    //its a class photoobject because the items are photoObjects.
+    //categorypicture holds pictureobjects accessing 2d arrays.
     PhotoObject *photoObject = self.pictureHandler.categoryArray[indexPath.section].photoArray[indexPath.row];
     
     [cell setPhotoItem:photoObject];
   
     
+    
+    
+    
+    
+    
     return cell;
 
 }
 
+//this sets the header of each section... the numberOfitemsIneachSection shows you how many items is already in one category.
 
-//Add header file
-//-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-//    UICollectionReusableView *reusableView = nil;
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+
+
+    SectionLabelCollectionReusableView *view;
+    
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]){
+    
+        view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"headerReuseIdentifier" forIndexPath:indexPath];
+        
+        //assigning the label to the cateogry's name the array already knows where all the items are from numberOfItemsInEachSection method...
+        view.label.text = self.pictureHandler.categoryArray[indexPath.section].categoryName;
+    
+    }
+    return view;
+    
+}
+
+
+
+
+
+
+//Header file
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
 //    
-//    if (kind == UICollectionElementKindSectionHeader) {
-//        InstaCollectionReusableHeaderView *headerView = [self.myCollectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"MyHeader" forIndexPath:indexPath];
-//        headerView.headerLabel.text = _imageArray[indexPath.section][0];
-//        reusableView = headerView;
+//    reuseableCellCLass *view;
+//    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+//        view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"Cell" forIndexPath:indexPath];
+//
 //    }
+//    return view;
 //    
-//    return reusableView;
+//    
 //}
+
 
 
 
